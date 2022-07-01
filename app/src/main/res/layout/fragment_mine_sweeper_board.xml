@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/purple_500"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/tvMineTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/mine"
+        android:fontFamily="@font/noto_sans"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/tvSmiley"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvMines"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:fontFamily="@font/noto_sans"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/tvMineTitle"
+        app:layout_constraintStart_toStartOf="@+id/tvMineTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvMineTitle"
+        tools:text="20" />
+
+    <TextView
+        android:id="@+id/tvSmiley"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/smiley"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toStartOf="@+id/tvFlag"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvMineTitle"
+        app:layout_constraintTop_toTopOf="@+id/tvMineTitle" />
+
+    <TextView
+        android:id="@+id/tvFlag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bomb"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/tvTimeTitle"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvSmiley"
+        app:layout_constraintTop_toTopOf="@+id/tvMineTitle" />
+
+
+    <TextView
+        android:id="@+id/tvTimeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time"
+        android:fontFamily="@font/noto_sans"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvFlag"
+        app:layout_constraintTop_toTopOf="@+id/tvSmiley" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/noto_sans"
+        app:layout_constraintEnd_toEndOf="@+id/tvTimeTitle"
+        app:layout_constraintStart_toStartOf="@+id/tvTimeTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvTimeTitle"
+        tools:text="10" />
+
+    <com.otaliastudios.zoom.ZoomLayout
+        android:id="@+id/zoomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16sp"
+        android:scrollbars="vertical|horizontal"
+        app:hasClickableChildren="true"
+        app:horizontalPanEnabled="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSmiley"
+        app:maxZoom="3.0"
+        app:maxZoomType="zoom"
+        app:minZoom="1.0"
+        app:minZoomType="zoom"
+        app:overPinchable="true"
+        app:overScrollHorizontal="true"
+        app:overScrollVertical="true"
+        app:verticalPanEnabled="true"
+        app:zoomEnabled="true">
+
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.otaliastudios.zoom.ZoomLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

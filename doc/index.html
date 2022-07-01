@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>{Play hub app }</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Autor">
+
+    <!-- loading the css -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <style type="text/css">
+        body {
+            padding-bottom: 40px;
+        }
+		
+		section {padding: 60px 0 0 0;}
+
+
+
+
+
+
+
+
+    </style>
+
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Various Icons (Favicon, Touch Icon,... -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/apple-touch-icon-114x114.png">
+
+</head>
+
+
+<body data-spy="scroll" data-target=".navbar" id="top">
+
+<!-- ========================= NAVIGATION BAR >> START ========================= -->
+<div class="navbar navbar-fixed-top navbar-inverse">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span
+                    class="icon-bar"></span> <span class="icon-bar"></span> <span
+                    class="icon-bar"></span> </a>
+            <a class="brand" href="#overview">Play hub app</a>
+            <!-- TIP: Change this for the name of your file -->
+            <div class="nav-collapse">
+
+                <ul class="nav nav-pills">
+                    <li class="active"><a href="#overview">Overview</a></li>
+
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                            Mobile <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+                            <li role="presentation">&nbsp;&nbsp;Setup & Configuration</li>
+
+                            <li><a href="#androidsdkstudio">Android SDK & Android Studio</a></li>
+                            <li><a href="#importproject">Import Project Into Android Studio</a></li>
+                            <li><a href="#syncdependencies">Sync For Necessary Gradle libraries</a>
+                            </li>
+                            <li class="divider"></li>
+
+                            <li role="presentation">&nbsp;&nbsp;Project Structure</li>
+                            <li><a href="#packagestructure">Package Structure</a></li>
+                            <li><a href="#renamepackage">Rename Package</a></li>
+                            <li><a href="#appicon">Change App Icon</a></li>
+
+                            <li><a href="#colors">Change Material Design Color Theme </a></li>
+                            <li><a href="#string">Change String Value</a></li>
+                            <li class="divider"></li>
+
+                            <li role="presentation">&nbsp;&nbsp;Generate Keys</li>
+                            <li><a href="#lottie">How to change sounds and lottie files?</a></li>
+                            <li><a href="#image">How to change image files?</a></li>
+
+
+                            <li><a href="#font">How to change font files?</a></li>
+                            <li><a href="#generateapk">Generate sign apk</a></li>
+
+                            <li class="divider"></li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ========================= NAVIGATION BAR >> END ========================= -->
+
+
+<!-- ========================= MAIN CONTAINER >> START ========================= -->
+<div class="container">
+
+    <!-- ========================= SECTION: Intro >> START ========================= -->
+    <section id="overview">
+
+        <div class="hero-unit">
+            <h1>User Guide</h1>
+            <p>Powered by <a href="https://qrolic.com/">Qrolic</a></p>
+            <p>
+                Play hub app contains mind games like TicTacToe (Single & Multi Player), Othello or Reversi (Single & Multiple Player) & Mine Sweeper with different levels.
+                <br><br>
+
+            </p>
+
+            <br>
+
+
+        </div>
+
+        <hr>
+
+        <div class="row-fluid">
+            <div class="span4">
+                <table width="100%">
+                    <tr>
+                        <td>Author:</td>
+                        <td>Qrolic</td>
+                    </tr>
+                    <tr>
+                        <td>Contact:</td>
+                        <td><a href="https://qrolic.com/">info@qrolic.com</a></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="span4">
+                <table width="100%">
+                    <tr>
+                        <td>Current App Version:</td>
+                        <td>1.0</td>
+                    </tr>
+                    <tr>
+                        <td>Documentation Version</td>
+                        <td>1.0</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="span4">
+                <table width="100%">
+                    <tr>
+                        <td>Created:</td>
+                        <td>1/Jul/2022</td>
+                    </tr>
+                    <tr>
+                        <td>Modified:</td>
+                        <td>1/Jul/2022</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <hr>
+
+    </section>
+    <!-- ========================= SECTION: Intro >> END ========================= -->
+
+
+    <!-- ========================= SECTION: Overview >> START ========================= -->
+    <section id="markup">
+        <div class="page-header">
+            <h1>Overview</h1>
+        </div>
+
+        <div class="alert alert-info">
+            Play hub app contains mind games like TicTacToe (Single & Multi Player), Othello or Reversi (Single & Multiple Player) & Mine Sweeper with different levels.
+
+            <b>Used Technology :</b> AndroidX, Native Android Development, Kotlin JDK, Android SDK,
+            Android Studio
+            <br><br>
+            <b>Important Note :</b> After downloading main file from GitHub, here’s what you may
+            need to know :
+            <br>
+            1. <a href="#androidsdkstudio">Setup SDK & Studio</a> <br>
+            2. <a href="#importproject">Import Project</a> <br>
+            3. <a href="#syncdependencies">Sync Gradle Libraries</a> <br>
+            4. <a href="#packagestructure">Project Package Structure</a> <br>
+            5. <a href="#appicon">App Icon</a>, <a href="#string">String Value Config</a>, <a
+                href="#colors">Material Design Color Theme </a> <br>
+            6. <a href="#sounds">How to change sounds and lottie files?</a><br>
+            7.<a href="#image">How to change image file?</a><br>
+            8.<a href="#font">How to change font files?</a><br>
+            9. <a href="#generateapk">Generate sign apk</a> <br>
+
+        </div>
+        <hr/>
+    </section>
+
+
+    <!-- ========================= SECTION: Overview >> END ========================= -->
+
+
+    <!-- ========================= SECTION: Android SDK & Android Studio >> START ========================= -->
+    <section id="androidsdkstudio">
+        <div class="page-header">
+            <h1>Android SDK & Android Studio <small>{How to setup for working environment?}</small>
+            </h1>
+        </div>
+
+        <div class="row">
+            <div class="span3">
+                <h3>Working Environment</h3>
+                <p>
+                    Direct testing on real device is the best option, but if you want to install
+                    android emulator, install Genymotion (Note: Google Play Service is required to
+                    install Google Maps and GC< feature)
+                </p>
+            </div>
+
+            <div class="span9">
+                <div class="accordion" id="accordion2">
+                    <div class="accordion-group">
+                        <div class="accordion-heading"><a class="accordion-toggle"
+                                                          data-toggle="collapse"
+                                                          data-parent="#accordion2"
+                                                          href="#collapseOne"> 1. Install JDK </a>
+                        </div>
+                        <div id="collapseOne" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                <p>
+                                    Need to install Java JDK from <a
+                                        href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">here</a>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading"><a class="accordion-toggle"
+                                                          data-toggle="collapse"
+                                                          data-parent="#accordion2"
+                                                          href="#collapseTwo"> 2. Install Android
+                            Studio </a></div>
+                        <div id="collapseTwo" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                <p>
+                                    Need to install <a
+                                        href="https://developer.android.com/sdk/index.html">Android
+                                    Studio</a> as official IDE for Android Development.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading"><a class="accordion-toggle"
+                                                          data-toggle="collapse"
+                                                          data-parent="#accordion2"
+                                                          href="#collapseTwo"> 3. Install Necessary
+                            SDK Package </a></div>
+                        <div id="collapseTwo" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                <p>
+                                    You can install necessary SDK packages from Android Studio Menu
+                                    -> Tools -> Android -> SDK Manager <br>
+                                    According the app's targetSdkVersion from gradle file, you might
+                                    need to install Android 9.0 <u>(API 28)</u>
+                                    <br>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-group">
+                        <div class="accordion-heading"><a class="accordion-toggle"
+                                                          data-toggle="collapse"
+                                                          data-parent="#accordion2"
+                                                          href="#collapseTwo"> 4. Install
+                            Emulator </a></div>
+                        <div id="collapseTwo" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                <p>
+                                    If directly development and testing on real device is the best
+                                    option but if you want to install android emulator, please
+                                    install <a href="http://www.genymotion.com/">Genymotion</a>
+
+                                    (Note : <b>Google Play Service</b> is <u>required to install</u>
+                                    for Google Map and GCM feature.)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <hr/>
+
+    </section>
+    <!-- ========================= SECTION: Android SDK & Android Studio >> END ========================= -->
+
+
+    <!-- ========================= SECTION: Import Project Into Android Studio >> START ========================= -->
+    <section id="importproject">
+        <div class="page-header">
+            <h1>Import Project Into Android Studio <small>{How to import project?}</small></h1>
+        </div>
+
+        <div class="row">
+            <div class="span3">
+                <h3>Import Project</h3>
+                <p>
+                    You have to import the project into your android studio and copy into your
+                    workspace folder.
+                </p>
+            </div>
+
+            <div class="span9">
+                <div class="accordion" id="accordion2">
+                    <div class="accordion-group">
+                        <div class="accordion-heading"><a class="accordion-toggle"
+                                                          data-toggle="collapse"
+                                                          data-parent="#accordion2"
+                                                          href="#collapseOne"> 1. Where is
+                            project? </a></div>
+                        <div id="collapseOne" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                <p>
+                                    After you download from Github, there is the project source code
+                                    at "qrolic/play-hub-app".
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading"><a class="accordion-toggle"
+                                                          data-toggle="collapse"
+                                                          data-parent="#accordion2"
+                                                          href="#collapseTwo"> 2. Import into
+                            Android Studio? </a></div>
+                        <div id="collapseTwo" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                <p>
+                                    You can import from android studio menu (File -> New -> Import
+                                    Project). When popup menu emerges, go to the folder (mentioned
+                                    at step 1) and copy that project into your workspace.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-group">
+                        <div class="accordion-heading"><a class="accordion-toggle"
+                                                          data-toggle="collapse"
+                                                          data-parent="#accordion2"
+                                                          href="#collapseTwo"> 3. Make sure the
+                            path? </a></div>
+                        <div id="collapseTwo" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                <p>
+                                    Check SDK and JDK paths for your imported project.
+                                    To check the paths, right click on project and Open module
+                                    settings. You can check whether paths are correct or not from
+                                    emerged popup window.
+                                    <img src="assets/img/sdklocation.png">
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <hr/>
+
+    </section>
+    <!-- ========================= SECTION: Import Project Into Android Studio >> END ========================= -->
+
+    <!-- ========================= SECTION: Sync For Dependencies Libraries >> START ========================= -->
+    <section id="syncdependencies">
+        <div class="page-header">
+            <h1>Sync For Dependencies Libraries <small>{How to download Dependencies
+                Libraries?}</small></h1>
+        </div>
+
+
+        <div class="row">
+            <div class="span3">
+                <h3>Dependencies Libraries</h3>
+                <p>
+                    When Android Studio asks whether want to sync for those dependencies, click on
+                    "sync" and wait until it finished successfully.
+                </p>
+            </div>
+            <div class="span9">
+
+
+                <div class="accordion" id="accordion2">
+                    <div class="accordion-group">
+                        <div class="accordion-heading"><a class="accordion-toggle"
+                                                          data-toggle="collapse"
+                                                          data-parent="#accordion2"
+                                                          href="#collapseOne"> 1. Where is declared
+                            for Dependencies? </a></div>
+                        <div id="collapseOne" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                <p>
+                                    There will be a file named build.gradle at
+                                    play-hub-app/app/build.gradle".<br/> <br>
+                                    <img src="assets/img/build.png">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="accordion" id="accordion2">
+                    <div class="accordion-group">
+                        <div class="accordion-heading"><a class="accordion-toggle"
+                                                          data-toggle="collapse"
+                                                          data-parent="#accordion2"
+                                                          href="#collapseOne"> 2. Sync
+                            Dependencies? </a></div>
+                        <div id="collapseOne" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                <p>
+                                    When Android Studio asks whether you want to sync for those
+                                    dependencies, click on “sync” and wait until it finishes
+                                    successfully. <br><br>
+                                    <!--  <img src="assets/img/offlinework.png">  -->
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <hr/>
+
+
+    </section>
+    <!-- ========================= SECTION: Sync For Dependencies Libraries >> END ========================= -->
+    <!-- ========================= SECTION: Package Structure >> START ========================= -->
+    <section id="packagestructure">
+        <div class="page-header">
+            <h1>Package Structure <small>{Which package contains for which files}</small></h1>
+        </div>
+
+
+        <div class="row">
+            <div class="span3">
+                <h3>Java Files Package</h3>
+                <p>
+                    There is some package inside project to maintain easily in future.
+                </p>
+            </div>
+            <div class="span9">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                    <tr>
+                        <th>Package Name</th>
+                        <th>Description</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+
+                    <tr>
+                        <td><code>com.qrolic.minesweeper.activity</code></td>
+                        <td>
+                           All screens & activities are created in this module. It also contain app ui theme files like color, shape,theme, type.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><code>com.qrolic.minesweeper.ui</code></td>
+                        <td>
+                            It also contain app ui theme files like color,theme, type.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>com.qrolic.minesweeper.database</code></td>
+                        <td>
+                            Shared Pref class is created in this module
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><code>com.qrolic.minesweeper.fragments</code></td>
+                        <td>
+                           All Fragments class are created in this module
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><code>com.qrolic.minesweeper.model</code></td>
+                        <td>
+                            All Models are implemented in this module.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><code>com.qrolic.minesweeper.utils</code></td>
+                        <td>
+                             Commonly used methods are created in this module
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><code>com.qrolic.minesweeper.viewmodel</code></td>
+                        <td>
+                            All the viewmodel are created in this module
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <hr/>
+
+
+    </section>
+    <!-- ========================= SECTION: Package Structure >> END ========================= -->
+    <!-- ========================= SECTION: Rename Package >> START ========================= -->
+    <section id="renamepackage">
+        <div class="page-header">
+            <h1>Rename Package <small>{How to rename the package?}</small></h1>
+        </div>
+
+
+        <div class="row">
+            <div class="span3">
+                <h3>Rename Package</h3>
+                <p>
+                    Currently, my original package name is "com.qrolic.minesweeper" so after you bought,
+                    you might need to change according your own package name. For example, if you
+                    want to change com.example.app to my.awesome.game.
+                </p>
+            </div>
+            <div class="span9">
+
+
+                <div class="accordion" id="accordion2">
+                    <div class="accordion-group">
+                        <div class="accordion-heading"><a class="accordion-toggle"
+                                                          data-toggle="collapse"
+                                                          data-parent="#accordion2"
+                                                          href="#collapseOne"> 1. Project pane </a>
+                        </div>
+                        <div id="collapseOne" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                <p>
+                                    In your Project pane, click on the little gear icon
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="accordion" id="accordion2">
+                    <div class="accordion-group">
+                        <div class="accordion-heading"><a class="accordion-toggle"
+                                                          data-toggle="collapse"
+                                                          data-parent="#accordion2"
+                                                          href="#collapseOne"> 2. Compact Empty
+                            Middle Packages </a></div>
+                        <div id="collapseOne" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                <p>
+                                    Uncheck / De-select the Compact Empty Middle Packages option
+                                    <br><br>
+                                    <img src="assets/img/compact_package.png">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="accordion" id="accordion2">
+                    <div class="accordion-group">
+                        <div class="accordion-heading"><a class="accordion-toggle"
+                                                          data-toggle="collapse"
+                                                          data-parent="#accordion2"
+                                                          href="#collapseOne"> 3. Individual
+                            Directories </a></div>
+                        <div id="collapseOne" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                <p>
+                                    Your package directory will now be broken up in individual
+                                    directories.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="accordion" id="accordion2">
+                    <div class="accordion-group">
+                        <div class="accordion-heading"><a class="accordion-toggle"
+                                                          data-toggle="collapse"
+                                                          data-parent="#accordion2"
+                                                          href="#collapseOne"> 4. Individually
+                            select each directory you want to rename </a></div>
+                        <div id="collapseOne" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                <p>
+                                    - Right-click it <br>
+                                    - Select <b>Refactor</b> <br>
+                                    - Click on <b>Rename</b> <br>
+                                    - In the Pop-up dialog, click on <b>Rename Package</b> instead
+                                    of Rename Directory <br>
+                                    - Enter the new name and hit <b>Refactor</b> <br>
+                                    - Allow a minute to let Android Studio update all changes <br>
+                                    - Note: When renaming com in Android Studio, it might give a
+                                    warning. In such case, select <b>Rename All</b>
+                                    <br><br>
+                                    <img src="assets/img/refactor_rename.png">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="accordion" id="accordion2">
+                    <div class="accordion-group">
+                        <div class="accordion-heading"><a class="accordion-toggle"
+                                                          data-toggle="collapse"
+                                                          data-parent="#accordion2"
+                                                          href="#collapseOne"> 5. Gradle Build
+                            File </a></div>
+                        <div id="collapseOne" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                <p>
+                                    Now open your <b>Gradle Build File</b> (build.gradle - Usually
+                                    app or mobile). Update the applicationId to your new Package
+                                    Name and Sync Gradle, if it hasn't already been updated
+                                    automatically: <br><br>
+                                    <img src="assets/img/build_package.png">
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <hr/>
+
+
+    </section>
+    <!-- ========================= SECTION: Rename Package >> END ========================= -->
+
+
+    <!-- ========================= SECTION: Change App Icon >> START ========================= -->
+    <section id="appicon">
+        <div class="page-header">
+            <h1>Change App Icon <small>{Change with your new icon}</small></h1>
+        </div>
+
+        You can generate new app icon from <a
+            href="http://romannurik.github.io/AndroidAssetStudio/icons-launcher.html">Android Assets
+        Studio</a>. After that you can replace new ic_launcher.png at mipmap-mdpi, mipmap-hdpi,
+        mipmap-xhdpi, mipmap-xxhdpi, mipmap-xxxhdpi. If you want to know about screen densities and
+        icon dimensions, please take a look at below chart <br>
+        <br> <img src="assets/img/dendim.png">
+
+
+        <hr/>
+
+    </section>
+    <!-- ========================= SECTION:Change App Icon >> END ========================= -->
+
+
+    <!-- ========================= SECTION: Change Material Design Color Palette >> START ========================= -->
+    <section id="colors">
+        <div class="page-header">
+            <h1>Change Material Design Color Palette <small>{How to change color pattern for
+                Material Design?}</small></h1>
+        </div>
+
+
+        <div class="row">
+            <div class="span3">
+                <h3>Material Design Color</h3>
+                <p>
+                    Color in material design is inspired by bold hues juxtaposed with muted
+                    environments, deep shadows, and bright highlights. (<a
+                        href="https://www.google.com/design/spec/style/color.html">Read More</a>)
+                </p>
+            </div>
+            <div class="span9">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                    <tr>
+                        <th>File Name</th>
+                        <th>Description</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><code>app/src/main/java/com/qrolic/cryptowatch/ui/theme/color.kt</code></td>
+                        <td>
+                            You can replace the another material design colors at that colors.kt.
+                            If you don't know match colors combination, <a
+                                href="https://www.materialpalette.com/">Material Palette</a> will
+                            help you to pick colors easily. After you decide colors from there, just
+                            replace them in colors.xml.
+
+                        </td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <hr/>
+
+
+    </section>
+
+
+    <!-- ========================= SECTION: Change String Value >> START ========================= -->
+    <section id="string">
+        <div class="page-header">
+            <h1>Change String Value <small>{Change with your new string value}</small></h1>
+        </div>
+
+        <div class="row">
+            <div class="span3">
+                <h3>String Value Config</h3>
+                It contains all app strings.
+                <p>
+
+                </p>
+            </div>
+            <div class="span9">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                    <tr>
+                        <th>File Name</th>
+                        <th>Description</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><code>/src/main/res/values/strings.xml</code></td>
+                        <td>
+                            You can replace new labels and text in strings.xml file, including app
+                            name also in"app_name"
+
+                        </td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+        <hr/>
+
+    </section>
+    <!-- ========================= SECTION:Change String Value >> END ========================= -->
+
+
+<!--    &lt;!&ndash; ========================= SECTION: Array >> START ========================= &ndash;&gt;-->
+<!--    <section id="admob">-->
+<!--        <div class="page-header">-->
+<!--            <h1>Change admob id<small>{How to change admob ids?}</small></h1>-->
+<!--        </div>-->
+
+
+<!--        <div class="row">-->
+<!--            <div class="span3">-->
+<!--                <h3>Change admob id</h3>-->
+<!--                <p>-->
+<!--                    Admob ids are placed at app/src/main/res/values/strings.xml folder. You can-->
+<!--                    replaced your admob ids.-->
+<!--                </p>-->
+<!--            </div>-->
+<!--            <div class="span9">-->
+
+
+<!--                <div class="accordion" id="accordion2">-->
+<!--                    <div class="accordion-group">-->
+<!--                        <div class="accordion-heading"><a class="accordion-toggle"-->
+<!--                                                          data-toggle="collapse"-->
+<!--                                                          data-parent="#accordion2"-->
+<!--                                                          href="#collapseOne"> Change admob id-->
+<!--                        </a></div>-->
+<!--                        <div id="collapseOne" class="accordion-body collapse">-->
+<!--                            <div class="accordion-inner">-->
+
+<!--                                <img src="assets/img/admob.png"> <br><br>-->
+
+<!--                                </p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+<!--                </div>-->
+
+
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <hr/>-->
+
+
+<!--    </section>-->
+<!--    &lt;!&ndash; ========================= SECTION: Array >> END ========================= &ndash;&gt;-->
+
+
+<!--    &lt;!&ndash; ========================= SECTION: Array >> START ========================= &ndash;&gt;-->
+<!--    <section id="privacy_policy">-->
+<!--        <div class="page-header">-->
+<!--            <h1>Change privacy policy texts<small>{How to change privacy policy data?}</small></h1>-->
+<!--        </div>-->
+
+
+<!--        <div class="row">-->
+<!--            <div class="span3">-->
+<!--                <h3>Change privacy policy data</h3>-->
+<!--                <p>-->
+<!--                    Privacy policy text is placed at app/src/main/res/values/strings.xml folder. You can-->
+<!--                    replaced your privacy policy.-->
+<!--                </p>-->
+<!--            </div>-->
+<!--            <div class="span9">-->
+
+
+<!--                <div class="accordion" id="accordion2">-->
+<!--                    <div class="accordion-group">-->
+<!--                        <div class="accordion-heading"><a class="accordion-toggle"-->
+<!--                                                          data-toggle="collapse"-->
+<!--                                                          data-parent="#accordion2"-->
+<!--                                                          href="#collapseOne"> Change privacy policy-->
+<!--                        </a></div>-->
+<!--                        <div id="collapseOne" class="accordion-body collapse">-->
+<!--                            <div class="accordion-inner">-->
+
+<!--                                <img src="assets/img/privacy_policy.png"> <br><br>-->
+
+<!--                                </p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+<!--                </div>-->
+
+
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <hr/>-->
+
+
+<!--    </section>-->
+<!--    &lt;!&ndash; ========================= SECTION: Array >> END ========================= &ndash;&gt;-->
+
+    <!-- ========================= SECTION: Array >> START ========================= -->
+    <section id="lottie">
+        <div class="page-header">
+            <h1>Change sounds and lottie files <small>{How to change sounds & lottie files?}</small></h1>
+        </div>
+
+
+        <div class="row">
+            <div class="span3">
+                <h3>Change sounds and lottie files </h3>
+                <p>
+                    All files  are placed at app/src/main/res/raw folder. You
+                    can replaced or add your sound or lottie file.
+                </p>
+            </div>
+            <div class="span9">
+
+
+                <div class="accordion" id="accordion2">
+                    <div class="accordion-group">
+                        <div class="accordion-heading"><a class="accordion-toggle"
+                                                          data-toggle="collapse"
+                                                          data-parent="#accordion2"
+                                                          href="#collapseOne"> Change image file
+                        </a></div>
+                        <div id="collapseOne" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                                <img src="assets/img/lottie.png"> <br><br>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <hr/>
+
+
+    </section>
+    <!-- ========================= SECTION: Array >> END ========================= -->
+
+
+    <!-- ========================= SECTION: Array >> START ========================= -->
+    <section id="image">
+        <div class="page-header">
+            <h1>Change images <small>{How to change image files?}</small></h1>
+        </div>
+
+
+        <div class="row">
+            <div class="span3">
+                <h3>Change image drawable</h3>
+                <p>
+                    All images  are placed at app/src/main/res/drawable folder. You
+                    can replaced or add your image file.
+                </p>
+            </div>
+            <div class="span9">
+
+
+                <div class="accordion" id="accordion2">
+                    <div class="accordion-group">
+                        <div class="accordion-heading"><a class="accordion-toggle"
+                                                          data-toggle="collapse"
+                                                          data-parent="#accordion2"
+                                                          href="#collapseOne"> Change image file
+                        </a></div>
+                        <div id="collapseOne" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                                <img src="assets/img/drawable.png"> <br><br>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <hr/>
+
+
+    </section>
+    <!-- ========================= SECTION: Array >> END ========================= -->
+
+
+    <!-- ========================= SECTION: Array >> START ========================= -->
+    <section id="font">
+        <div class="page-header">
+            <h1>Change font files<small>{How to change font files?}</small></h1>
+        </div>
+
+
+        <div class="row">
+            <div class="span3">
+                <h3>Change font files</h3>
+                <p>
+                    You can change or replace your font files from app/src/main/res/font folder.
+                </p>
+            </div>
+            <div class="span9">
+
+
+                <div class="accordion" id="accordion2">
+                    <div class="accordion-group">
+                        <div class="accordion-heading"><a class="accordion-toggle"
+                                                          data-toggle="collapse"
+                                                          data-parent="#accordion2"
+                                                          href="#collapseOne"> Change font files
+                        </a></div>
+                        <div id="collapseOne" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                                <img src="assets/img/font.png"> <br><br>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <hr/>
+
+
+    </section>
+    <!-- ========================= SECTION: Array >> END ========================= -->
+
+
+    <!-- ========================= SECTION: Google Admob Keys >> START ========================= -->
+    <section id="generateapk">
+        <div class="page-header">
+            <h1>Generate Sign apk<small>{How to generate sign apk}</small></h1>
+        </div>
+
+        <br>
+        <div class="row">
+            <div class="span3">
+                <b>Sign apk</b><br>
+                <p>
+                    Follow this steps to generate sign apk
+                </p>
+            </div>
+
+            <div class="span9">
+                <div class="accordion" id="accordion2">
+                    <div class="accordion-group">
+                        <div class="accordion-heading"><a class="accordion-toggle"
+                                                          data-toggle="collapse"
+                                                          data-parent="#accordion2"
+                                                          href="#collapseOne"> Select Build >>>
+                            Generat Signed Bundle / APK </a></div>
+                        <div id="collapseOne" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                                <img src="assets/img/selectBuild.png">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading"><a class="accordion-toggle"
+                                                          data-toggle="collapse"
+                                                          data-parent="#accordion2"
+                                                          href="#collapseOne"> Select APK & Click
+                            Next </a></div>
+                        <div id="collapseOne" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                                <img src="assets/img/selectApk.png">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading"><a class="accordion-toggle"
+                                                          data-toggle="collapse"
+                                                          data-parent="#accordion2"
+                                                          href="#collapseOne"> Create New Key
+                            Store </a></div>
+                        <div id="collapseOne" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                                <img src="assets/img/newkeystore.png">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading"><a class="accordion-toggle"
+                                                          data-toggle="collapse"
+                                                          data-parent="#accordion2"
+                                                          href="#collapseOne"> 1 - KeyStore path :
+                            <p>select a path in your system (Create a path in any drive eg:
+                                *F:\AndroidKeys*)give a name to your key(eg:game).save in here with
+                                the specific name for your project (F:\AndroidKeys\game.jks).</p>
+                            <br/>
+                            2 - Password**: <p>Give some new password and confirm it(Don't
+                                forget).</p>
+
+                            <br/>
+                            3 - Alias : <p>Enter an identifying name for your key.</p>
+
+                            <br/>
+                            4 - Password : <p>Create and confirm a secure password for your key.
+                                This should be different from the password you chose for your
+                                keystore. Validity: select time period for validity of key.</p><br/>
+                            5 - Certificate: <p>Enter some information about yourslf or organization
+                                (like name,..). Done with new key generation.</p>
+
+                            <br/>
+                            6 - Click ok </a></div>
+                        <div id="collapseOne" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                                <img src="assets/img/keypath.png">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading"><a class="accordion-toggle"
+                                                          data-toggle="collapse"
+                                                          data-parent="#accordion2"
+                                                          href="#collapseOne"> After clicking "OK"
+                            on The last step above, it will show you this table
+
+                            <br/>Then Click Next </a></div>
+                        <div id="collapseOne" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                                <img src="assets/img/next.png">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading"><a class="accordion-toggle"
+                                                          data-toggle="collapse"
+                                                          data-parent="#accordion2"
+                                                          href="#collapseOne">1 - Choose release
+                            <br/>
+                            2 - Choose V1 and V2 as a signature Versions <br/>
+                            3 - Then Click Finish <br/>
+
+                        </a></div>
+                        <div id="collapseOne" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                                <img src="assets/img/release.png">
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <hr>
+    </section>
+
+
+    <footer>
+        <a href="https://info@qrolic.com"><p>&copy; Qrolic 2022</p></a>
+    </footer>
+
+</div>
+<!-- ========================= MAIN CONTAINER >> END ========================= -->
+
+
+<!-- loading javascripts -->
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/google-code-prettify/prettify.js"></script>
+
+<!-- init javascripts -->
+<script src="assets/js/init.js"></script>
+
+</body>
+
+</html>

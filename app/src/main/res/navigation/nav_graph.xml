@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mineSweeperLevelFragment">
+
+
+    <fragment
+        android:id="@+id/mineSweeperLevelFragment"
+        android:name="com.qrolic.minesweeper.fragments.MineSweeperLevelFragment"
+        android:label="MineSweeperLevelFragment" >
+        <action
+            android:id="@+id/action_mineSweeperLevelFragment_to_mineSweeperBoardFragment"
+            app:destination="@id/mineSweeperBoardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mineSweeperBoardFragment"
+        android:name="com.qrolic.minesweeper.fragments.MineSweeperBoardFragment"
+        android:label="fragment_mine_sweeper_board"
+        tools:layout="@layout/fragment_mine_sweeper_board" />
+</navigation>
